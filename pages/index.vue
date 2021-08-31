@@ -23,11 +23,39 @@
         43rL42d12AZV2TPECztzuF7VBg5y7U279dJQaLoefHcgDxDpsNqhpE4ftGtWdqaSs3WTn11jY8NRHabKDt5BqYfCVGq6UoS
       </div>
     </div>
+
+    <div class="mt-20">
+      <div class="text-4xl text-center">
+        Blog Posts
+      </div>
+      <ul class="mt-5">
+        <li v-for="article of articles" :key="article.slug">
+          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }" class="flex">
+            <img :src="article.img" class="h-80">
+            <div class="ml-5">
+              <h2>{{ article.title }}</h2>
+              <p>by {{ article.author.name }}</p>
+              <p>{{ article.description }}</p>
+            </div>
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  async asyncData ({ $content, params }) {
+    const articles = await $content('articles')
+      .only(['title', 'description', 'img', 'slug', 'author'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return {
+      articles
+    }
+  },
   data () {
     return {
       skills: [
