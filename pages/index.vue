@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-4/5 mx-auto flex flex-col items-center justify-center">
+  <div class="h-min-full w-4/5 mx-auto py-20 flex flex-col items-center justify-center">
     <img :src="require('@/assets/ryam-cropped-hehe.jpg')" alt="Ryam" class="max-w-md w-4/5 mx-auto rounded">
     <div class="mt-8 text-5xl">
       Hello there, this is Ryam.
@@ -33,9 +33,15 @@
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }" class="flex">
             <img :src="article.img" class="h-80">
             <div class="ml-5">
-              <h2>{{ article.title }}</h2>
-              <p>by {{ article.author.name }}</p>
-              <p>{{ article.description }}</p>
+              <div class="text-3xl">
+                {{ article.title }}
+              </div>
+              <p v-if="article.author">
+                by {{ article.author.name }}
+              </p>
+              <p class="text-xl">
+                {{ article.description }}
+              </p>
             </div>
           </NuxtLink>
         </li>

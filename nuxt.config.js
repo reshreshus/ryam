@@ -24,6 +24,16 @@ export default {
   css: [
   ],
 
+  styleResources: {
+    scss: [
+      '@/assets/styles/utils.scss'
+    ]
+  },
+
+  tailwindcss: {
+    jit: true
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],

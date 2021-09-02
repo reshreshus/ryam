@@ -15,7 +15,7 @@
     <img :src="article.img" :alt="article.alt" class="w-96">
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
-    <nuxt-content :document="article" class="mt-5" />
+    <nuxt-content :document="article" class="mt-5 prose" />
 
     <prev-next :prev="prev" :next="next" />
   </article>
