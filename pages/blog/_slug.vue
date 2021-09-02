@@ -1,5 +1,5 @@
 <template>
-  <article class="">
+  <article class="w-[1000px] mx-auto flex flex-col items-center">
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <nav>
@@ -13,7 +13,9 @@
     </nav>
 
     <img :src="article.img" :alt="article.alt" class="w-96">
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <div class="text-sm text-gray">
+      Article last updated: {{ formatDate(article.updatedAt) }}
+    </div>
 
     <nuxt-content :document="article" class="mt-5 prose" />
 
