@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import { micromark } from 'micromark'
+
 export default {
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
@@ -79,6 +81,9 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    micromark('# I am micro')
   }
 }
 </script>
