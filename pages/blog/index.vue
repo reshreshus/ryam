@@ -11,12 +11,15 @@
             <div class="text-3xl">
               {{ article.title }}
             </div>
-            <p v-if="article.author">
+            <!-- <p v-if="article.author">
               by {{ article.author.name }}
-            </p>
+            </p> -->
             <p class="text-xl text-gray">
               {{ article.description }}
             </p>
+            <div class="text-sm text-gray">
+              {{ formatDate(article.updatedAt) }}
+            </div>
           </div>
         </NuxtLink>
       </li>
@@ -25,16 +28,21 @@
 </template>
 
 <script>
+import { formatDate } from '@/helpers'
+
 export default {
   async asyncData ({ $content }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .only(['title', 'description', 'img', 'slug', 'author', 'updatedAt'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
     return {
       articles
     }
+  },
+  methods: {
+    formatDate
   }
 
 }

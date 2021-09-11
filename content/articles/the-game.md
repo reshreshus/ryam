@@ -1,20 +1,15 @@
 ---
-title: Maximizing the game
-description: Description of the basic game
-img: https://i.imgur.com/8dv3i0i.png
+title: Look, I now I suck
+description:
+img: https://i.imgur.com/GTnI7rH.png
 alt: Hardcore Leveling warrior
 ---
-XP = hours
-Tracking
-* Divine Body (Spiritual practice)
-* Training
-* Tech Magic
+This is what I've been secretely telling myself all the time.  
+I'm not good enough to deal with the situation.  
+I escape.  
+I hide my ambitions.  
+But the pain remains.  
 
-Branching
-* Music
-* Drawing
-* Writing
-    * Journaling
-
-Goal is to maximize XP and get the most goods.
-Let the game begin.
+I am incompetent.  
+But look. I'm gonna do my fun everyday.  
+I'm gonna take the next right step.  

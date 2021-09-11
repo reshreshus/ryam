@@ -1,6 +1,8 @@
 <template>
-  <article class="w-[1000px] mx-auto flex flex-col items-center">
-    <h1>{{ article.title }}</h1>
+  <article class="mt-20 w-[600px] w-max-full mx-auto flex flex-col items-left">
+    <div class="text-4xl text-center text-bold">
+      {{ article.title }}
+    </div>
     <p>{{ article.description }}</p>
     <nav>
       <ul>
@@ -12,18 +14,20 @@
       </ul>
     </nav>
 
-    <img :src="article.img" :alt="article.alt" class="w-96">
+    <img :src="article.img" :alt="article.alt" class="mt-5 w-max-full">
     <div class="text-sm text-gray">
       Article last updated: {{ formatDate(article.updatedAt) }}
     </div>
 
-    <nuxt-content :document="article" class="mt-5 prose" />
+    <nuxt-content :document="article" class="prose" />
 
     <prev-next :prev="prev" :next="next" />
   </article>
 </template>
 
 <script>
+import { formatDate } from '@/helpers'
+
 export default {
   async asyncData ({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
@@ -41,29 +45,12 @@ export default {
     }
   },
   methods: {
-    formatDate (date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
-    }
+    formatDate
   }
 }
 </script>
 
 <style lang="sass" scoped>
-h1
-  font-weight: bold
-  font-size: 36px
-
-.nuxt-content
-  h2
-    font-weight: bold
-    font-size: 28px
-  h3
-    font-weight: bold
-    font-size: 22px
-  p
-    margin-bottom: 20px
-
 .icon.icon-link
   background-image: url('@/assets/svg/icon-hashtag.svg');
   display: inline-block;
