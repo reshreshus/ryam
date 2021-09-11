@@ -1,5 +1,6 @@
 <template>
   <div class="h-full">
+    <sidebar class="" />
     <Nuxt />
   </div>
 </template>
