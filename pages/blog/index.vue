@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 max-w-[65ch] mx-auto px-5">
+  <div class="mt-10 max-w-[65ch] ml-20 md:ml-32 xl:ml-56">
     <div class="text-4xl text-center">
       Blog Posts
     </div>
@@ -14,7 +14,7 @@
             <!-- <p v-if="article.author">
               by {{ article.author.name }}
             </p> -->
-            <p class="text-xl text-gray">
+            <p class="text-lg text-gray">
               {{ article.description }}
             </p>
             <div class="text-sm text-gray">

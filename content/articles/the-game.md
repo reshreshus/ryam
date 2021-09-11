@@ -1,6 +1,6 @@
 ---
 title: Look, I now I suck
-description:
+description: Tribute to Rishat
 img: https://i.imgur.com/GTnI7rH.png
 alt: Hardcore Leveling warrior
 ---
@@ -13,3 +13,7 @@ But the pain remains.
 I am incompetent.  
 But look. I'm gonna do my fun everyday.  
 I'm gonna take the next right step.  
+
+---
+This was the picture I painted.  
+I refuse to belive in it!

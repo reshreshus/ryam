@@ -3,8 +3,10 @@
     <div class="text-4xl text-center text-bold">
       {{ article.title }}
     </div>
-    <p>{{ article.description }}</p>
-    <nav>
+    <div class="text-gray text-center">
+      {{ article.description }}
+    </div>
+    <!-- <nav>
       <ul>
         <li v-for="link of article.toc" :key="link.id">
           <nuxt-link :to="`#${link.id}`" :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }">
@@ -12,7 +14,7 @@
           </nuxt-link>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
     <img :src="article.img" :alt="article.alt" class="mt-5 w-max-full">
     <div class="text-sm text-gray">

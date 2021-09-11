@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <sidebar class="" />
+    <sidebar class="mt-5 md:mt-0" />
     <Nuxt />
   </div>
 </template>
@@ -12,7 +12,6 @@ export default {
 </script>
 
 <style lang="sass" >
-#__layout
-  @apply h-full
-  height: 100%
+#__layout, body
+  min-height: 100%
 </style>

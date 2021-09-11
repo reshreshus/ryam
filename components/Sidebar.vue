@@ -1,9 +1,9 @@
 <template>
-  <div class="text-xl fixed left-6 top-20">
+  <div class="text-xl flex items-center space-x-20 md:space-x-0 ml-20 md:ml-0 md:block md:fixed left-6 top-20">
     <nuxt-link to="/" class="text-2xl text-blue">
       RYAM
     </nuxt-link>
-    <div class="mt-2 flex flex-col">
+    <div class="ml-2 md:ml-0 md:mt-2 flex md:flex-col items-start space-x-5 md:space-x-0">
       <nuxt-link
         v-for="item in menu"
         :key="item.link"
