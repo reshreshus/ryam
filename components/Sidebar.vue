@@ -4,7 +4,13 @@
       RYAM
     </nuxt-link>
     <div class="mt-2 flex flex-col">
-      <nuxt-link v-for="item in menu" :key="item.link" :to="item.link" class="">
+      <nuxt-link
+        v-for="item in menu"
+        :key="item.link"
+        :to="item.link"
+        class="hover:text-blue"
+        :class="{'-selected': selected(item.link)}"
+      >
         {{ item.title }}
       </nuxt-link>
     </div>
@@ -18,18 +24,32 @@ export default {
       menu: [
         {
           title: 'Blog',
-          link: 'blog'
+          link: '/blog'
         },
         {
           title: 'Videos',
-          link: 'videos'
+          link: '/videos'
         }
       ]
+    }
+  },
+  methods: {
+    selected (link) {
+      return link === this.$route.path
     }
   }
 }
 </script>
 
 <style lang="sass" scoped>
+.-selected
+  @apply text-blue relative
+  &::before
+    content: '['
+    left: -7px
+  &::after
+    content: ']'
+  &::before, &::after
+    position: absolute
 
 </style>
