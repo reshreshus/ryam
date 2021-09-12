@@ -11,9 +11,11 @@ I hide my ambitions.
 But the pain remains.  
 
 I am incompetent.  
-But look. I'm gonna do my fun everyday.  
-I'm gonna take the next right step.  
 
 ---
 This was the picture I painted.  
-I refuse to belive in it!
+
+I am good. I deserve to feel good.  
+No philisophy will change that.  
+No work will change that.  
+And the only thing left to do is to continue being who I am.  

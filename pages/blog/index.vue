@@ -3,8 +3,8 @@
     <div class="text-4xl text-center">
       Blog Posts
     </div>
-    <ul class="mt-5">
-      <li v-for="article of articles" :key="article.slug">
+    <ul class="mt-5 space-y-5">
+      <li v-for="article of articles" :key="article.slug" class="">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }" class="flex">
           <img :src="article.img" class="w-40 h-32 max-w-full object-cover rounded">
           <div class="ml-5">

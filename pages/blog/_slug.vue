@@ -17,13 +17,13 @@
     </nav> -->
 
     <img :src="article.img" :alt="article.alt" class="mt-5 w-max-full">
-    <div class="text-sm text-gray">
-      Article last updated: {{ formatDate(article.updatedAt) }}
+    <div class="text-sm text-gray mt-5">
+      {{ formatDate(article.updatedAt) }}
     </div>
 
     <nuxt-content :document="article" class="prose" />
 
-    <prev-next :prev="prev" :next="next" />
+    <prev-next :prev="prev" :next="next" class="mt-20" />
   </article>
 </template>
 
