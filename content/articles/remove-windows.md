@@ -1,7 +1,7 @@
 ---
 title: Remove Windows
 description: Or how I change
-img: /jinx.jpg
+img: /linux-breaking-windows.jpg
 alt: Chad
 ---
 I've been thinking about switching to GNU/Linux for a long time.  
