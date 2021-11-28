@@ -54,10 +54,12 @@ export default {
 
 <style lang="sass" scoped>
 .icon.icon-link
-  background-image: url('@/assets/svg/icon-hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
+  background-image: '@/assets/svg/icon-hashtag.svg'
 
-</style>
+  display: inline-block
+
+  width: 20px
+
+  height: 20px
+
+  background-size: 20px 20px</style>
