@@ -10,6 +10,12 @@ module.exports = {
       },
       gray: {
         DEFAULT: '#BABABA'
+      },
+      pink: {
+        DEFAULT: '#DB3069'
+      },
+      yellow: {
+        bright: '#FCAB10'
       }
     },
     extend: {

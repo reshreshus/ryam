@@ -1,14 +1,17 @@
 <template>
-  <div class="text-xl flex items-center space-x-20 md:space-x-0 ml-20 md:ml-0 md:block md:fixed left-6 top-20">
-    <nuxt-link to="/" class="text-2xl text-blue">
-      RYAM
+  <div class="text-xl flex items-center space-x-6 md:space-x-0 ml-6 md:ml-0 md:block md:fixed left-6 top-10">
+    <nuxt-link to="/" class="text-2xl">
+      <span class="text-blue-dark">R</span>
+      <span class="text-pink">Y</span>
+      <span class="text-yellow-bright">A</span>
+      <span class="">M</span>
     </nuxt-link>
     <div class="ml-2 md:ml-0 md:mt-2 flex md:flex-col items-start space-x-5 md:space-x-0">
       <nuxt-link
         v-for="item in menu"
         :key="item.link"
         :to="item.link"
-        class="hover:text-blue"
+        class="text-blue hover:text-blue-dark"
         :class="{'-selected': selected(item.link)}"
       >
         {{ item.title }}
@@ -27,8 +30,8 @@ export default {
           link: '/blog'
         },
         {
-          title: 'Videos',
-          link: '/videos'
+          title: 'Links',
+          link: '/links'
         }
       ]
     }
@@ -43,7 +46,7 @@ export default {
 
 <style lang="sass" scoped>
 .-selected
-  @apply text-blue relative
+  @apply relative text-blue-dark
   &::before
     content: '['
     left: -7px
