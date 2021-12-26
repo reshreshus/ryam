@@ -14,10 +14,6 @@ export default {
     return {
       about
     }
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
