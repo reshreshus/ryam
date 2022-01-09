@@ -3,13 +3,14 @@
     <div
       v-for="(photo, idx) in photos"
       :key="idx"
-      class=""
+      class="p-4 w-80 h-100 max-w-full"
     >
       <img
         :src="require(`@/assets/photos/${photo.src}`)"
         :alt="photo.desc"
-        class="p-4 max-w-full w-80 h-80 object-cover"
+        class="img object-cover cursor-pointer transform duration-300"
       >
+      <p> {{ photo.desc }} </p>
     </div>
   </div>
 </template>
@@ -35,6 +36,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="sass">
+.img
+  position: relative
+  &:active
+    transform: scale(2)
+    z-index: 10
 </style>
