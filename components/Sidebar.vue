@@ -32,6 +32,10 @@ export default {
         {
           title: 'Links',
           link: '/links'
+        },
+        {
+          title: 'Photos',
+          link: '/photos'
         }
       ]
     }

@@ -1,2 +1,2 @@
 # Hi, this is Rishat
-I work. I develop. Ok, I'll think about a creative title later.
+I am level 1 wanderer in the land of programming and linux.
