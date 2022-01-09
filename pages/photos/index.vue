@@ -20,12 +20,12 @@ export default {
     return {
       photos: [
         {
-          src: 'reshi.jpg',
+          src: 'reshi-crop.jpg',
           desc: 'wild reshreshus caught on photo',
           date: '29.12.2021'
         },
         {
-          src: 'dendenmushi_and_rishat.jpg',
+          src: 'dendenmushi_and_rishat-crop.jpg',
           desc: '2 hot guys',
           date: '29.12.2021'
         }
