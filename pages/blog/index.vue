@@ -1,9 +1,6 @@
 <template>
-  <div class="mt-10 max-w-[65ch]">
-    <div class="text-3xl text-center">
-      Blog Posts
-    </div>
-    <ul class="mt-5">
+  <div class="mt-10 md:mt-20 max-w-[65ch]">
+    <ul class="">
       <li v-for="article of articles" :key="article.slug" class="">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }" class="text-2xl text-blue">
           {{ article.title }}
