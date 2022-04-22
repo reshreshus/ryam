@@ -1,5 +1,5 @@
 <template>
-  <article class="mt-20 w-[900px] w-max-full flex flex-col items-left">
+  <article class="mt-20 w-[900px] max-w-full flex flex-col items-left">
     <div class="text-4xl text-center text-bold">
       {{ article.title }}
     </div>
