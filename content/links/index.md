@@ -1,3 +1,6 @@
+Currently researching
+* Human design & gene keys. I am 1/3 emotional generator, btw.
+* Transurfing
 Programing
 * [lukesmith.xyz](https://lukesmith.xyz/)
   * Interesting videos on 'self-development' and learning
