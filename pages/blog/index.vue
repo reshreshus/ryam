@@ -30,11 +30,7 @@ export default {
 
   head() {
     return {
-      title: 'Blog posts',
-
-      meta: {
-
-      }
+      title: 'Blog posts'
     }
   },
 

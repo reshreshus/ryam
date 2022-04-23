@@ -20,9 +20,12 @@ export default {
     return {
       title: 'About me',
 
-      meta: {
-        description: 'How Ryam sees himself'
-      }
+      meta: [
+        {
+          name: 'description',
+          content: 'How Ryam sees himself'
+        }
+      ]
     }
   }
 }

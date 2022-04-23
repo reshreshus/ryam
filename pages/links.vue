@@ -17,9 +17,12 @@ export default {
     return {
       title: 'Useful links',
 
-      meta: {
-        description: 'Interesting stuff'
-      }
+      meta: [
+        {
+          name: 'description',
+          content: 'Interesting stuff'
+        }
+      ]
     }
   }
 }

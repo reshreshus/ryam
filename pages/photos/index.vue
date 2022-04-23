@@ -37,9 +37,13 @@ export default {
   head() {
     return {
       title: 'Photos of Ryam',
-      meta: {
-        description: 'Family friendly'
-      }
+
+      meta: [
+        {
+          name: 'description',
+          content: 'Family friendly'
+        }
+      ]
     }
   }
 }
