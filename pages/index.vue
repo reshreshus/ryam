@@ -14,6 +14,16 @@ export default {
     return {
       about
     }
+  },
+
+  head() {
+    return {
+      title: 'About me',
+
+      meta: {
+        description: 'How Ryam sees himself'
+      }
+    }
   }
 }
 </script>

@@ -11,6 +11,16 @@ export default {
     return {
       links
     }
+  },
+
+  head() {
+    return {
+      title: 'Useful links',
+
+      meta: {
+        description: 'Interesting stuff'
+      }
+    }
   }
 }
 </script>

@@ -27,10 +27,20 @@ export default {
       articles
     }
   },
+
+  head() {
+    return {
+      title: 'Blog posts',
+
+      meta: {
+
+      }
+    }
+  },
+
   methods: {
     formatDate
   }
-
 }
 </script>
 

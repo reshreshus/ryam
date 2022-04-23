@@ -46,6 +46,34 @@ export default {
       next
     }
   },
+
+  head() {
+    return {
+      title: this.article.title,
+
+      meta: [
+        {
+          name: 'description',
+          content: this.article.description
+        },
+        // TODO
+        // {
+        //   name: 'keywords',
+        //   content: ''
+        // },
+        {
+          property: 'og:url',
+          content: `https://ryam.codes/${this.article.link}`
+        },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: this.article.title },
+        { property: 'og:description', content: this.article.description ? this.article.description : 'A Blog post by Ryam' },
+        { property: 'og:image', content: this.article.img }
+
+      ]
+    }
+  },
+
   methods: {
     formatDate
   }
